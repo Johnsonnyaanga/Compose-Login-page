@@ -65,7 +65,10 @@ fun Login() {
             val md = Modifier.padding(16.dp)
              Image(painter = painterResource(R.drawable.cleaner) ,
                  contentDescription = "my image",
-                 modifier = Modifier.fillMaxWidth()
+                 modifier = Modifier
+                     .fillMaxWidth()
+                     .height(200.dp)
+
              )
             Spacer(modifier = Modifier.padding(16.dp))
 
@@ -88,7 +91,6 @@ fun Login() {
                 modifier = Modifier.padding(16.dp)
             )
 
-            Spacer(modifier = Modifier.padding(vertical = 12.dp))
             CompositionLocalProvider(LocalContentAlpha provides ContentAlpha.medium) {
                 Text(
 
@@ -110,7 +112,7 @@ fun Login() {
                     text = "Login",
                     color = Color.White,
                     modifier = Modifier
-                        .padding(5.dp)
+                        .padding(3.dp)
                 )
 
             }
